@@ -207,3 +207,69 @@ body > ul {
 body > ul li {
   padding: 8px 0;
 }
+
+/* Task 6 - Box Generator */
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  max-width: 486px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#controls input:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
+#controls button {
+  height: 40px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+[data-create] {
+  background-color: #4e75ff;
+  color: #ffffff;
+}
+
+[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+[data-destroy] {
+  background-color: #ff4e4e;
+  color: #ffffff;
+}
+
+[data-destroy]:hover {
+  background-color: #ff6c6c;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+}
